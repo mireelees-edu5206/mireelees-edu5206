@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
+  <defs>
+    <linearGradient id="postgresGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="postgresGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="100" fill="#000000" rx="8" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- PostgreSQL logo representation -->
+  <ellipse cx="50" cy="50" rx="20" ry="15" fill="none" stroke="url(#postgresGradient)" stroke-width="2" filter="url(#postgresGlow)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="50" cy="50" rx="20" ry="15" fill="none" stroke="url(#postgresGradient)" stroke-width="2" filter="url(#postgresGlow)" transform="translate(0,-10)"/>
+  <ellipse cx="50" cy="50" rx="20" ry="15" fill="none" stroke="url(#postgresGradient)" stroke-width="2" filter="url(#postgresGlow)" transform="translate(0,10)"/>
+  
+  <!-- Technology name -->
+  <text x="90" y="45" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="url(#postgresGradient)" filter="url(#postgresGlow)">
+    POSTGRESQL
+  </text>
+  
+  <!-- Category -->
+  <text x="90" y="70" font-family="monospace" font-size="10" fill="#a0a0a0">
+    DATABASE
+  </text>
+  
+  <!-- Animated border -->
+  <rect x="5" y="5" width="190" height="90" fill="none" stroke="url(#postgresGradient)" stroke-width="1" rx="6" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,32 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="80" viewBox="0 0 600 80">
   <defs>
-    <linearGradient id="typingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    <linearGradient id="neonCyanType" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="neonPurpleType" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9900ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonGlowType">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
   <!-- Background -->
-  <rect width="600" height="80" fill="#0d1117" rx="8"/>
+  <rect width="600" height="80" fill="#000000" rx="8" stroke="#1a1a1a" stroke-width="1"/>
   
   <!-- Typing text with cursor animation -->
-  <text x="20" y="48" font-family="monospace" font-size="20" fill="url(#typingGradient)">
-    <tspan>Software Developer</tspan>
+  <text x="20" y="48" font-family="monospace" font-size="18" fill="url(#neonCyanType)" filter="url(#neonGlowType)">
+    <tspan>SOFTWARE DEVELOPER</tspan>
     <animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite"/>
   </text>
   
-  <text x="20" y="48" font-family="monospace" font-size="20" fill="url(#typingGradient)" opacity="0">
-    <tspan>Full Stack Developer</tspan>
+  <text x="20" y="48" font-family="monospace" font-size="18" fill="url(#neonPurpleType)" filter="url(#neonGlowType)" opacity="0">
+    <tspan>FULL STACK DEVELOPMENT</tspan>
     <animate attributeName="opacity" values="0;1;0" dur="3s" begin="1s" repeatCount="indefinite"/>
   </text>
   
-  <text x="20" y="48" font-family="monospace" font-size="20" fill="url(#typingGradient)" opacity="0">
-    <tspan>Multiplatform Developer</tspan>
+  <text x="20" y="48" font-family="monospace" font-size="18" fill="#00ff66" filter="url(#neonGlowType)" opacity="0">
+    <tspan>MULTIPLATFORM DEVELOPMENT</tspan>
     <animate attributeName="opacity" values="0;1;0" dur="3s" begin="2s" repeatCount="indefinite"/>
   </text>
   
   <!-- Cursor -->
-  <rect x="280" y="28" width="2" height="24" fill="#00d4ff">
-    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+  <rect x="320" y="30" width="2" height="20" fill="#00ffff" filter="url(#neonGlowType)">
+    <animate attributeName="opacity" values="1;0;1" dur="0.6s" repeatCount="indefinite"/>
   </rect>
+  
+  <!-- Decorative line -->
+  <line x1="20" y1="60" x2="580" y2="60" stroke="#1a1a1a" stroke-width="1"/>
 </svg>

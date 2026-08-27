@@ -1,15 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
   <defs>
-    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8" />
-      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9900ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+    <linearGradient id="neonGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff66;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="intenseGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -18,82 +29,109 @@
   </defs>
   
   <!-- Background -->
-  <rect width="800" height="200" fill="#0d1117" rx="12"/>
+  <rect width="800" height="200" fill="#000000" rx="12"/>
   
-  <!-- Animated grid lines -->
-  <g stroke="url(#gradient2)" stroke-width="1" opacity="0.3">
-    <line x1="0" y1="50" x2="800" y2="50">
-      <animate attributeName="x1" values="0;-50;0" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="800;750;800" dur="3s" repeatCount="indefinite"/>
+  <!-- Neon grid lines -->
+  <g stroke="url(#neonCyan)" stroke-width="1" opacity="0.4" filter="url(#neonGlow)">
+    <line x1="0" y1="40" x2="800" y2="40">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2s" repeatCount="indefinite"/>
     </line>
-    <line x1="0" y1="100" x2="800" y2="100">
-      <animate attributeName="x1" values="0;-50;0" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="800;750;800" dur="4s" repeatCount="indefinite"/>
+    <line x1="0" y1="80" x2="800" y2="80">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.5s" repeatCount="indefinite"/>
     </line>
-    <line x1="0" y1="150" x2="800" y2="150">
-      <animate attributeName="x1" values="0;-50;0" dur="5s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="800;750;800" dur="5s" repeatCount="indefinite"/>
+    <line x1="0" y1="120" x2="800" y2="120">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="160" x2="800" y2="160">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Vertical grid lines -->
+  <g stroke="url(#neonPurple)" stroke-width="1" opacity="0.3" filter="url(#neonGlow)">
+    <line x1="100" y1="0" x2="100" y2="200">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="0" x2="300" y2="200">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="0" x2="500" y2="200">
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="700" y1="0" x2="700" y2="200">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="2.8s" repeatCount="indefinite"/>
     </line>
   </g>
   
   <!-- Animated particles -->
-  <g fill="url(#gradient1)" filter="url(#glow)">
-    <circle cx="100" cy="80" r="3">
-      <animate attributeName="cy" values="80;60;80" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  <g filter="url(#intenseGlow)">
+    <circle cx="80" cy="60" r="2" fill="#00ffff">
+      <animate attributeName="cy" values="60;40;60" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="200" cy="120" r="2">
-      <animate attributeName="cy" values="120;100;120" dur="2.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+    <circle cx="180" cy="140" r="1.5" fill="#ff00ff">
+      <animate attributeName="cy" values="140;120;140" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="350" cy="70" r="2.5">
-      <animate attributeName="cy" values="70;50;70" dur="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
+    <circle cx="320" cy="50" r="2" fill="#00ff00">
+      <animate attributeName="cy" values="50;30;50" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="500" cy="130" r="2">
-      <animate attributeName="cy" values="130;110;130" dur="2.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+    <circle cx="480" cy="150" r="1.5" fill="#00ffff">
+      <animate attributeName="cy" values="150;130;150" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="650" cy="90" r="3">
-      <animate attributeName="cy" values="90;70;90" dur="2.8s" repeatCount="indefinite"/>
+    <circle cx="620" cy="70" r="2" fill="#ff00ff">
+      <animate attributeName="cy" values="70;50;70" dur="2.8s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="750" cy="110" r="2.5">
-      <animate attributeName="cy" values="110;90;110" dur="3.2s" repeatCount="indefinite"/>
+    <circle cx="750" cy="130" r="1.5" fill="#00ff00">
+      <animate attributeName="cy" values="130;110;130" dur="3.2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="1;0.4;1" dur="3.2s" repeatCount="indefinite"/>
     </circle>
   </g>
   
   <!-- Code-like elements -->
-  <g fill="url(#gradient1)" opacity="0.6" font-family="monospace" font-size="12">
-    <text x="20" y="30" opacity="0.5">&lt;developer&gt;</text>
-    <text x="700" y="180" opacity="0.5">&lt;/developer&gt;</text>
-    <text x="50" y="170" opacity="0.3">const skills = ["React", "Python", "TypeScript"]</text>
+  <g fill="#00ffff" opacity="0.4" font-family="monospace" font-size="10">
+    <text x="15" y="25">&lt;developer&gt;</text>
+    <text x="730" y="185">&lt;/developer&gt;</text>
+    <text x="15" y="185">const stack = ["React", "Python", "TypeScript"]</text>
   </g>
   
-  <!-- Main title with glow -->
-  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#gradient1)" filter="url(#glow)">
-    BRAYAN EDUARDO
-    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  <!-- Main title with intense neon glow -->
+  <text x="400" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#neonCyan)" filter="url(#intenseGlow)">
+    BRAYAN EDUARDO HERAS MIRELES
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
   </text>
   
-  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">
-    Software Developer • Full Stack • AI Enthusiast
+  <!-- Subtitle with purple glow -->
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="url(#neonPurple)" filter="url(#neonGlow)">
+    SOFTWARE DEVELOPER
   </text>
   
-  <!-- Decorative corners -->
-  <g stroke="url(#gradient1)" stroke-width="2" fill="none">
-    <path d="M 20 20 L 20 40 L 40 40">
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#00ff66" filter="url(#neonGlow)">
+    MULTIPLATFORM DEVELOPMENT
+  </text>
+  
+  <!-- Neon corners -->
+  <g stroke-width="2" fill="none" filter="url(#intenseGlow)">
+    <path d="M 15 15 L 15 35 L 35 35" stroke="#00ffff">
       <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
     </path>
-    <path d="M 780 20 L 780 40 L 760 40">
+    <path d="M 785 15 L 785 35 L 765 35" stroke="#ff00ff">
       <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
     </path>
-    <path d="M 20 180 L 20 160 L 40 160">
+    <path d="M 15 185 L 15 165 L 35 165" stroke="#00ff00">
       <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
     </path>
-    <path d="M 780 180 L 780 160 L 760 160">
+    <path d="M 785 185 L 785 165 L 765 165" stroke="#00ffff">
       <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/>
     </path>
   </g>
+  
+  <!-- Scanline effect -->
+  <rect x="0" y="0" width="800" height="2" fill="#00ffff" opacity="0.1">
+    <animate attributeName="y" values="0;200;0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.05;0.1" dur="4s" repeatCount="indefinite"/>
+  </rect>
 </svg>

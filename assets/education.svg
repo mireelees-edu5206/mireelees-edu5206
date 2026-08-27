@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="neonCyanEdu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="neonPurpleEdu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9900ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonGlowEdu">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="#000000" rx="8" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Title -->
+  <text x="20" y="30" font-family="monospace" font-size="12" font-weight="bold" fill="#e0e0e0">
+    EDUCATION
+  </text>
+  
+  <!-- Divider -->
+  <line x1="20" y1="45" x2="380" y2="45" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- University -->
+  <rect x="20" y="60" width="360" height="60" fill="#111111" rx="4" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="30" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#neonCyanEdu)" filter="url(#neonGlowEdu)">
+    UNIVERSIDAD TECNOLOGICA DEL VALLE DE TOLUCA
+  </text>
+  <text x="30" y="100" font-family="monospace" font-size="10" fill="#a0a0a0">
+    Desarrollo de Software Multiplataforma
+  </text>
+  <text x="30" y="115" font-family="monospace" font-size="9" fill="#808080">
+    Current Student
+  </text>
+  
+  <!-- Prepa -->
+  <rect x="20" y="130" width="360" height="50" fill="#111111" rx="4" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="30" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="url(#neonPurpleEdu)" filter="url(#neonGlowEdu)">
+    PREPA CETIS 23
+  </text>
+  <text x="30" y="170" font-family="monospace" font-size="10" fill="#a0a0a0">
+    Técnico en Programación
+  </text>
+  
+  <!-- Animated border -->
+  <rect x="5" y="5" width="390" height="190" fill="none" stroke="url(#neonCyanEdu)" stroke-width="1" rx="6" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+</svg>

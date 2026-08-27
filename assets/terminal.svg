@@ -1,56 +1,75 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
   <defs>
-    <linearGradient id="terminalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    <linearGradient id="neonCyanTerm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="neonPurpleTerm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9900ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonGlowTerm">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   
   <!-- Terminal window -->
-  <rect width="400" height="250" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1"/>
+  <rect width="400" height="250" fill="#000000" rx="8" stroke="#1a1a1a" stroke-width="1"/>
   
   <!-- Terminal header -->
-  <rect width="400" height="30" fill="#161b22" rx="8"/>
-  <rect y="30" width="400" height="20" fill="#161b22"/>
+  <rect width="400" height="30" fill="#111111" rx="8"/>
+  <rect y="30" width="400" height="20" fill="#111111"/>
   
   <!-- Window controls -->
-  <circle cx="20" cy="15" r="6" fill="#ff5f56"/>
-  <circle cx="40" cy="15" r="6" fill="#ffbd2e"/>
-  <circle cx="60" cy="15" r="6" fill="#27ca40"/>
+  <circle cx="20" cy="15" r="6" fill="#ff0066"/>
+  <circle cx="40" cy="15" r="6" fill="#ffcc00"/>
+  <circle cx="60" cy="15" r="6" fill="#00ff66"/>
   
   <!-- Terminal content -->
-  <text x="15" y="60" font-family="monospace" font-size="12" fill="#8b949e">
-    <tspan fill="#00d4ff">brayan@github</tspan>:~$ whoami
+  <text x="15" y="60" font-family="monospace" font-size="11" fill="#a0a0a0">
+    <tspan fill="#00ffff" filter="url(#neonGlowTerm)">brayan@github</tspan>:~$ whoami
   </text>
   
-  <text x="15" y="80" font-family="monospace" font-size="12" fill="#c9d1d9">
+  <text x="15" y="78" font-family="monospace" font-size="11" fill="#e0e0e0">
     Software Developer
   </text>
   
-  <text x="15" y="105" font-family="monospace" font-size="12" fill="#8b949e">
-    <tspan fill="#00d4ff">brayan@github</tspan>:~$ skills
+  <text x="15" y="100" font-family="monospace" font-size="11" fill="#a0a0a0">
+    <tspan fill="#00ffff" filter="url(#neonGlowTerm)">brayan@github</tspan>:~$ skills
   </text>
   
-  <text x="15" y="125" font-family="monospace" font-size="12" fill="url(#terminalGradient)">
+  <text x="15" y="118" font-family="monospace" font-size="11" fill="url(#neonCyanTerm)" filter="url(#neonGlowTerm)">
     React • Python • TypeScript
   </text>
-  <text x="15" y="145" font-family="monospace" font-size="12" fill="url(#terminalGradient)">
+  <text x="15" y="136" font-family="monospace" font-size="11" fill="url(#neonPurpleTerm)" filter="url(#neonGlowTerm)">
     FastAPI • Node • PostgreSQL
   </text>
   
-  <text x="15" y="170" font-family="monospace" font-size="12" fill="#8b949e">
-    <tspan fill="#00d4ff">brayan@github</tspan>:~$ status
+  <text x="15" y="158" font-family="monospace" font-size="11" fill="#a0a0a0">
+    <tspan fill="#00ffff" filter="url(#neonGlowTerm)">brayan@github</tspan>:~$ status
   </text>
   
-  <text x="15" y="190" font-family="monospace" font-size="12" fill="#27ca40">
-    ● Building projects
+  <text x="15" y="176" font-family="monospace" font-size="11" fill="#00ff66" filter="url(#neonGlowTerm)">
+    BUILDING PROJECTS
   </text>
-  <text x="15" y="210" font-family="monospace" font-size="12" fill="#27ca40">
-    ● Learning
+  <text x="15" y="194" font-family="monospace" font-size="11" fill="#00ff66" filter="url(#neonGlowTerm)">
+    LEARNING FULL STACK
+  </text>
+  <text x="15" y="212" font-family="monospace" font-size="11" fill="#00ff66" filter="url(#neonGlowTerm)">
+    EXPLORING AI
   </text>
   
   <!-- Animated cursor -->
-  <rect x="15" y="225" width="8" height="14" fill="#00d4ff">
-    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+  <rect x="15" y="225" width="8" height="12" fill="#00ffff" filter="url(#neonGlowTerm)">
+    <animate attributeName="opacity" values="1;0;1" dur="0.6s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Scanline effect -->
+  <rect x="0" y="0" width="400" height="1" fill="#00ffff" opacity="0.05">
+    <animate attributeName="y" values="0;250;0" dur="3s" repeatCount="indefinite"/>
   </rect>
 </svg>
