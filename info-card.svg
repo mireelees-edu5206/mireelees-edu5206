@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400">
+  <defs>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .info-text {
+        font-family: 'Consolas', 'Monaco', monospace;
+        font-size: 14px;
+        fill: #c9d1d9;
+        animation: fadeIn 0.5s ease-out forwards;
+        opacity: 0;
+      }
+      .label {
+        fill: #79c0ff;
+        font-weight: bold;
+      }
+      .value {
+        fill: #c9d1d9;
+      }
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        fill: #d2a8ff;
+      }
+      .subtitle {
+        font-size: 12px;
+        fill: #ffa657;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#0d1117" rx="12"/>
+  <text x="20" y="20" class="info-text title" style="animation-delay: 0s;">mireelees-edu5206@github</text>
+  <text x="20" y="42" class="info-text subtitle" style="animation-delay: 0.1s;">-----------</text>
+  <text x="20" y="75.0" class="info-text" style="animation-delay: 0.2s;">Brayan Eduardo Heras Mireles</text>
+  <text x="20" y="97.0" class="info-text" style="animation-delay: 0.30000000000000004s;">Software Engineering Student</text>
+  <text x="20" y="119.0" class="info-text" style="animation-delay: 0.4s;">Web & Mobile App Developer</text>
+  <text x="20" y="152.0" class="info-text"><tspan class="label" fill="#79c0ff">OS</tspan><tspan class="value">: GitHub Dark</tspan></text>
+  <text x="20" y="174.0" class="info-text"><tspan class="label" fill="#d2a8ff">Shell</tspan><tspan class="value">: zsh</tspan></text>
+  <text x="20" y="196.0" class="info-text"><tspan class="label" fill="#ff7b72">DE</tspan><tspan class="value">: VS Code</tspan></text>
+  <text x="20" y="218.0" class="info-text"><tspan class="label" fill="#ffa657">Terminal</tspan><tspan class="value">: Windows Terminal</tspan></text>
+  <text x="20" y="240.0" class="info-text"><tspan class="label" fill="#56d364">CPU</tspan><tspan class="value">: Intel/AMD</tspan></text>
+  <text x="20" y="262.0" class="info-text"><tspan class="label" fill="#a5d6ff">Memory</tspan><tspan class="value">: 16GB RAM</tspan></text>
+  <text x="20" y="295.0" class="info-text label" style="animation-delay: 1.0299999999999998s;">Languages:</text>
+  <text x="40" y="317.0" class="info-text value" style="animation-delay: 1.1099999999999999s;">Python, JavaScript, TypeScript</text>
+  <text x="20" y="339.0" class="info-text label" style="animation-delay: 1.19s;">Frameworks:</text>
+  <text x="40" y="361.0" class="info-text value" style="animation-delay: 1.27s;">React, React Native, FastAPI, Kivy</text>
+  <text x="20" y="383.0" class="info-text label" style="animation-delay: 1.35s;">Databases:</text>
+  <text x="40" y="405.0" class="info-text value" style="animation-delay: 1.4300000000000002s;">PostgreSQL, MySQL</text>
+  <text x="20" y="427.0" class="info-text label" style="animation-delay: 1.5100000000000002s;">Tools:</text>
+  <text x="40" y="449.0" class="info-text value" style="animation-delay: 1.5900000000000003s;">Git, GitHub</text>
+</svg>
