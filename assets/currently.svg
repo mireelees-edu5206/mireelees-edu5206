@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="currentlyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="200" fill="#0d1117" rx="12" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Currently Building -->
+  <rect x="20" y="20" width="170" height="160" fill="#161b22" rx="8" stroke="#30363d" stroke-width="1"/>
+  <text x="105" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c9d1d9">
+    🔨 BUILDING
+  </text>
+  <g font-family="Arial, sans-serif" font-size="11" fill="#8b949e">
+    <text x="35" y="70">• Web Apps</text>
+    <text x="35" y="90">• Mobile Apps</text>
+    <text x="35" y="110">• AI Solutions</text>
+    <text x="35" y="130">• APIs</text>
+    <text x="35" y="150">• Full Stack</text>
+  </g>
+  
+  <!-- Currently Learning -->
+  <rect x="210" y="20" width="170" height="160" fill="#161b22" rx="8" stroke="#30363d" stroke-width="1"/>
+  <text x="295" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c9d1d9">
+    📚 LEARNING
+  </text>
+  <g font-family="Arial, sans-serif" font-size="11" fill="#8b949e">
+    <text x="225" y="70">• Architecture</text>
+    <text x="225" y="90">• AI/ML</text>
+    <text x="225" y="110">• Best Practices</text>
+    <text x="225" y="130">• Cloud Dev</text>
+    <text x="225" y="150">• System Design</text>
+  </g>
+</svg>

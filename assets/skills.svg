@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="skillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0d1117" rx="12"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#skillGradient)">
+    SKILLS & TECHNOLOGIES
+  </text>
+  
+  <!-- Languages Card -->
+  <rect x="30" y="70" width="350" height="150" fill="#161b22" rx="8" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#c9d1d9">LANGUAGES</text>
+  
+  <text x="50" y="130" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🐍 Python</text>
+  <text x="50" y="150" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">⚛️ JavaScript</text>
+  <text x="50" y="170" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">📘 TypeScript</text>
+  <text x="50" y="190" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">☕ Java</text>
+  <text x="50" y="210" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">⚡ C++</text>
+  
+  <!-- Frontend Card -->
+  <rect x="420" y="70" width="350" height="150" fill="#161b22" rx="8" stroke="#30363d" stroke-width="1"/>
+  <text x="440" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#c9d1d9">FRONTEND</text>
+  
+  <text x="440" y="130" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">⚛️ React</text>
+  <text x="440" y="150" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">📱 React Native</text>
+  <text x="440" y="170" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🎨 Tailwind CSS</text>
+  <text x="440" y="190" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🌐 HTML/CSS</text>
+  <text x="440" y="210" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">📦 Expo</text>
+  
+  <!-- Backend Card -->
+  <rect x="30" y="240" width="350" height="150" fill="#161b22" rx="8" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#c9d1d9">BACKEND</text>
+  
+  <text x="50" y="300" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">⚡ FastAPI</text>
+  <text x="50" y="320" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🟢 Node.js</text>
+  <text x="50" y="340" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🔗 GraphQL</text>
+  <text x="50" y="360" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🚀 Apollo Server</text>
+  <text x="50" y="380" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🐘 Kivy</text>
+  
+  <!-- Database & Tools Card -->
+  <rect x="420" y="240" width="350" height="150" fill="#161b22" rx="8" stroke="#30363d" stroke-width="1"/>
+  <text x="440" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#c9d1d9">DATABASE & TOOLS</text>
+  
+  <text x="440" y="300" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🐬 MySQL</text>
+  <text x="440" y="320" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🐘 PostgreSQL</text>
+  <text x="440" y="340" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">🐙 Docker</text>
+  <text x="440" y="360" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">📦 Git/GitHub</text>
+  <text x="440" y="380" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">💻 VS Code</text>
+</svg>

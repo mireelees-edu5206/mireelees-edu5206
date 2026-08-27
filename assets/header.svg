@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="#0d1117" rx="12"/>
+  
+  <!-- Animated grid lines -->
+  <g stroke="url(#gradient2)" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="50" x2="800" y2="50">
+      <animate attributeName="x1" values="0;-50;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="800;750;800" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="100" x2="800" y2="100">
+      <animate attributeName="x1" values="0;-50;0" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="800;750;800" dur="4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="150" x2="800" y2="150">
+      <animate attributeName="x1" values="0;-50;0" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="800;750;800" dur="5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Animated particles -->
+  <g fill="url(#gradient1)" filter="url(#glow)">
+    <circle cx="100" cy="80" r="3">
+      <animate attributeName="cy" values="80;60;80" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="120" r="2">
+      <animate attributeName="cy" values="120;100;120" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="70" r="2.5">
+      <animate attributeName="cy" values="70;50;70" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="130" r="2">
+      <animate attributeName="cy" values="130;110;130" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="90" r="3">
+      <animate attributeName="cy" values="90;70;90" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="110" r="2.5">
+      <animate attributeName="cy" values="110;90;110" dur="3.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Code-like elements -->
+  <g fill="url(#gradient1)" opacity="0.6" font-family="monospace" font-size="12">
+    <text x="20" y="30" opacity="0.5">&lt;developer&gt;</text>
+    <text x="700" y="180" opacity="0.5">&lt;/developer&gt;</text>
+    <text x="50" y="170" opacity="0.3">const skills = ["React", "Python", "TypeScript"]</text>
+  </g>
+  
+  <!-- Main title with glow -->
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#gradient1)" filter="url(#glow)">
+    BRAYAN EDUARDO
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <text x="400" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8b949e">
+    Software Developer • Full Stack • AI Enthusiast
+  </text>
+  
+  <!-- Decorative corners -->
+  <g stroke="url(#gradient1)" stroke-width="2" fill="none">
+    <path d="M 20 20 L 20 40 L 40 40">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 780 20 L 780 40 L 760 40">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 20 180 L 20 160 L 40 160">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 780 180 L 780 160 L 760 160">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

@@ -1,108 +1,49 @@
 <div align="center">
 
-# 👋 Hola, soy Brayan Eduardo
+<img src="assets/header.svg" alt="Header" width="800"/>
 
-### Desarrollador de Software Multiplataforma
-
-Estudiante de Desarrollo de Software Multiplataforma interesado en crear soluciones tecnológicas mediante desarrollo web, móvil, APIs e Inteligencia Artificial.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-eduardo-heras-mireles-4007b1427)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mireelees-edu5206)
+<img src="assets/typing.svg" alt="Typing Effect" width="600"/>
 
 </div>
 
 ---
 
-## 🎓 Sobre mí
+<div align="center">
+
+## 🎓 SOBRE MÍ
 
 Soy estudiante de **Desarrollo de Software Multiplataforma** en la **Universidad Tecnológica del Valle de Toluca (UTVT)**. Anteriormente estudié Técnico en Programación en Prepa CETIS 23.
 
-Me interesa el desarrollo de software y la creación de soluciones tecnológicas para problemas reales, con especial énfasis en:
-
-- Desarrollo web y móvil
-- Desarrollo multiplataforma
-- APIs y bases de datos
-- Inteligencia Artificial aplicada al desarrollo
-- Automatización y sistemas
+Me interesa el desarrollo de software y la creación de soluciones tecnológicas para problemas reales, con especial énfasis en desarrollo web, móvil, APIs e Inteligencia Artificial aplicada al desarrollo.
 
 Actualmente estoy construyendo mi perfil profesional como desarrollador, fortaleciendo mis habilidades mediante proyectos prácticos y trabajo en equipo. En algunos proyectos he tenido responsabilidades de liderazgo técnico.
 
----
-
-## 🛠️ Tecnologías
-
-### Lenguajes
-Python | C++ | Java | TypeScript | JavaScript
-
-### Frontend
-React | React Native | HTML | CSS | Tailwind CSS
-
-### Backend
-FastAPI | Node.js | GraphQL | Apollo Server
-
-### Bases de datos
-MySQL | PostgreSQL
-
-### Herramientas
-Git | GitHub | Docker | VS Code
-
-### Metodologías
-Scrum | UML | APIs REST | Arquitecturas Frontend/Backend/Database
+</div>
 
 ---
 
-## � Proyectos Destacados
+## 🛠️ SKILLS & TECHNOLOGIES
 
-### 🏝️ ÍXA - Plataforma de Recomendación Turística Inteligente
-
-Plataforma de recomendación turística inteligente enfocada en Isla Mujeres que ofrece recomendaciones e itinerarios personalizados según el perfil del visitante, promoviendo el turismo cultural, histórico y sustentable.
-
-**Características principales:**
-- Recomendaciones turísticas personalizadas
-- Clasificación de perfiles de visitantes
-- Información sobre atractivos turísticos
-- Mapa de lugares
-- Generación de itinerarios
-- Aplicación web progresiva (PWA)
-
-**Tecnologías:** Python, FastAPI, React, MySQL, Algoritmos de recomendación, PWA
-
-**Metodología:** Scrum
+<img src="assets/skills.svg" alt="Skills" width="800"/>
 
 ---
 
-### 🌱 EcoResiduos
+## 🚀 PROYECTOS DESTACADOS
 
-Sistema digital orientado al registro, clasificación, control y análisis de residuos en pequeños negocios y comunidades para facilitar la gestión de residuos y apoyar la toma de decisiones ambientales.
+### 🏝️ ÍXA
+<img src="assets/projects/ixa.svg" alt="ÍXA Project" width="600"/>
 
-**Características principales:**
-- Registro y clasificación de residuos
-- Historial de registros
-- Estadísticas y dashboard
-- Gestión de información
-- Análisis básico de datos
-
-**Tecnologías:** React, TypeScript, React Native, Node.js, GraphQL, Apollo Server, PostgreSQL, Docker
-
-**Arquitectura:** Frontend + Backend + Base de datos
-
-**Mi participación:** Desarrollo y liderazgo técnico del proyecto
-
----
+### 🌱 EcoResiduos  
+<img src="assets/projects/ecoresiduos.svg" alt="EcoResiduos Project" width="600"/>
 
 ### 🚨 ComuniAlert
-
-Aplicación desarrollada para facilitar el reporte de situaciones de inseguridad dentro de una comunidad, utilizando tecnología para mejorar la comunicación y el reporte de incidentes.
-
-**Tecnologías:** Python, Kivy, Base de datos
-
-**Mi participación:** Desarrollo y liderazgo técnico del proyecto
+<img src="assets/projects/comunialert.svg" alt="ComuniAlert Project" width="600"/>
 
 ---
 
-## 👨‍💻 Liderazgo en Proyectos
+## 👨‍💻 LIDERAZGO EN PROYECTOS
 
-He tenido responsabilidades de liderazgo técnico en proyectos académicos, incluyendo:
+He tenido responsabilidades de liderazgo técnico en proyectos académicos:
 
 - **EcoResiduos** - Coordinación de desarrollo y arquitectura
 - **ComuniAlert** - Liderazgo técnico del proyecto
@@ -111,19 +52,28 @@ Estas experiencias me han permitido desarrollar habilidades de coordinación, co
 
 ---
 
-## 📚 Actualmente Aprendiendo
+## � GITHUB STATS
 
-Continúo fortaleciendo mis habilidades en:
+<img src="assets/stats.svg" alt="GitHub Stats" width="400"/>
 
-- Desarrollo Full Stack
-- Aplicaciones multiplataforma
-- Inteligencia Artificial aplicada al desarrollo
-- Arquitecturas de software escalables
-- Buenas prácticas de desarrollo
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mireelees-edu5206&show_icons=true&theme=dark&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mireelees-edu5206&layout=compact&theme=dark&hide_border=true)
 
 ---
 
-## 🎯 Objetivos Profesionales
+## 🔮 CURRENTLY
+
+<img src="assets/currently.svg" alt="Currently Building & Learning" width="400"/>
+
+---
+
+## 💻 TERMINAL
+
+<img src="assets/terminal.svg" alt="Terminal" width="400"/>
+
+---
+
+## 🎯 OBJETIVOS PROFESIONALES
 
 Mi objetivo profesional es continuar creciendo como desarrollador de software y especializarme progresivamente en:
 
@@ -134,17 +84,11 @@ Mi objetivo profesional es continuar creciendo como desarrollador de software y 
 
 ---
 
-## 📊 GitHub Stats
+## � CONTACTO
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mireelees-edu5206&show_icons=true&theme=dark&hide_border=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mireelees-edu5206&layout=compact&theme=dark&hide_border=true)
-
----
-
-## 📫 Contacto
-
-- **LinkedIn:** [Brayan Eduardo Heras Mireles](https://www.linkedin.com/in/brayan-eduardo-heras-mireles-4007b1427)
-- **GitHub:** [@mireelees-edu5206](https://github.com/mireelees-edu5206)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-eduardo-heras-mireles-4007b1427)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mireelees-edu5206)
+[![Email](https://img.shields.io/badge/Email-herasb6@gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:herasb6@gmail.com)
 
 ---
 
