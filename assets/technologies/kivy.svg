@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
+  <defs>
+    <linearGradient id="kivyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff66;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00cc00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="kivyGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="100" fill="#000000" rx="8" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Kivy logo representation -->
+  <rect x="30" y="30" width="40" height="40" fill="none" stroke="url(#kivyGradient)" stroke-width="2" filter="url(#kivyGlow)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="50" cy="50" r="10" fill="url(#kivyGradient)" filter="url(#kivyGlow)"/>
+  
+  <!-- Technology name -->
+  <text x="90" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="url(#kivyGradient)" filter="url(#kivyGlow)">
+    KIVY
+  </text>
+  
+  <!-- Category -->
+  <text x="90" y="70" font-family="monospace" font-size="10" fill="#a0a0a0">
+    MOBILE
+  </text>
+  
+  <!-- Animated border -->
+  <rect x="5" y="5" width="190" height="90" fill="none" stroke="url(#kivyGradient)" stroke-width="1" rx="6" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
